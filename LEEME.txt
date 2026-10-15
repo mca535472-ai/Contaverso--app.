@@ -1,0 +1,17 @@
+CONTAVERSO — ARCHIVOS PREPARADOS PARA PWA / APK ANDROID
+
+Incluye:
+- index.html: tu archivo HTML original con metadatos PWA y registro del service worker.
+- manifest.json: nombre, iconos y apariencia de la app.
+- service-worker.js: guarda el archivo principal para abrirlo sin conexión tras la primera carga.
+- icon-192.png e icon-512.png: iconos de la app.
+
+IMPORTANTE:
+1. Este paquete NO es todavía una APK instalable. Para generar una APK con PWABuilder, primero debes publicar estos archivos en una URL HTTPS.
+2. En Android, puedes hacerlo desde el navegador. Sube los archivos a un repositorio de GitHub y activa GitHub Pages, o usa un servicio de alojamiento estático.
+3. Después abre https://pwabuilder.com, introduce la URL HTTPS publicada y entra a Package for stores > Android > Other Android para descargar un paquete de prueba, si la opción está disponible.
+4. El progreso existente usa localStorage. Se guarda en el almacenamiento del navegador/app en ese dispositivo y origen. No se sincroniza entre dispositivos. Borrar datos de la app o desinstalarla puede borrar ese progreso.
+5. El modo sin conexión funciona después de que el service worker se haya instalado correctamente con una primera visita online. Los enlaces a portales oficiales y las fuentes de Google Fonts necesitan internet.
+6. Revisa los derechos de uso de la música incrustada antes de distribuir públicamente la app.
+
+Para generar la APK se necesita publicar primero en HTTPS; no es posible crear una APK Android nativa directamente desde este ZIP sin pasar por un empaquetador o entorno de compilación.
